@@ -26,3 +26,16 @@ function quadrado() {
   document.querySelector('.resultado4').innerHTML = quadResult4;
   document.querySelector('.resultado5').innerHTML = quadResult5;
 }
+
+function maior() {
+  var numero1 = document.querySelector('.numero1').value;
+  var numero2 = document.querySelector('.numero2').value;
+  var numero3 = document.querySelector('.numero3').value;
+  var numero4 = document.querySelector('.numero4').value;
+  var numero5 = document.querySelector('.numero5').value;
+
+  var valorMax = Math.max(numero1, numero2, numero3, numero4, numero5);
+
+  var resultadoMax = valorMax;
+  document.querySelector('.resultadoMax').innerHTML = resultadoMax;
+}
