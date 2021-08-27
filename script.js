@@ -129,3 +129,15 @@ function altura() {
 
   document.write('Quantidade de homem: ' + pessoasM);
 }
+
+function nomes() {
+  var name1 = document.querySelector('.nome1').value;
+  var name2 = document.querySelector('.nome2').value;
+  var name3 = document.querySelector('.nome3').value;
+  var name4 = document.querySelector('.nome4').value;
+
+  var nameTotal = [];
+  nameTotal.push(name1, name2, name3, name4);
+  var resultadoNomes = nameTotal.reverse();
+  document.querySelector('.resultadoNomes').innerHTML = resultadoNomes;
+}
