@@ -141,3 +141,24 @@ function nomes() {
   var resultadoNomes = nameTotal.reverse();
   document.querySelector('.resultadoNomes').innerHTML = resultadoNomes;
 }
+
+function data() {
+  var date = document.querySelector('.data').value;
+
+  var dia = date.getDate();
+
+  var mes = date.getMonth() + 1;
+
+  var ano = date.getYear();
+
+  var resultadoData = 'dia é:' + dia + ' o mes é :' + mes + ' o ano é :' + ano;
+  document.querySelector('.resultadoData').innerHTML = resultadoData;
+}
+
+function pageAIA() {
+  window.location.href = 'pageAIA.html';
+}
+
+function pageGX2() {
+  window.location.href = 'https://www.gx2.com.br';
+}
