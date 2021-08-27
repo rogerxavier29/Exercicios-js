@@ -163,46 +163,39 @@ function pageGX2() {
   window.location.href = 'https://www.gx2.com.br';
 }
 
-//Exercicio 10
+//-----------------------Exercicio 10
 
 function clique1() {
-  var cliques = 0;
-  cliques = ++ 1;
+  var cliques = 1;
   document.querySelector('.caixa1').innerHTML = 'Caixa' + cliques + 'Ativada';
 }
 
 function clique2() {
-  var cliques = 0;
-  cliques += 1;
+  var cliques = 2;
   document.querySelector('.caixa2').innerHTML = 'Caixa' + cliques + 'Ativada';
 }
 
 function clique3() {
-  var cliques = 0;
-  cliques += 1;
-  document.querySelector('.caixa3').innerHTML = 'Caixa' + cliques + 'Ativada';
-}
+  var cliques = 3;
 
-function clique3() {
-  var cliques = 0;
-  cliques += 1;
   document.querySelector('.caixa3').innerHTML = 'Caixa' + cliques + 'Ativada';
 }
 
 function clique4() {
-  var cliques = 0;
-  cliques += 1;
+  var cliques = 4;
+
   document.querySelector('.caixa4').innerHTML = 'Caixa' + cliques + 'Ativada';
 }
 
 function clique5() {
-  var cliques = 0;
-  cliques += 1;
+  var cliques = 5;
+
   document.querySelector('.caixa5').innerHTML = 'Caixa' + cliques + 'Ativada';
 }
 
 function clique6() {
-  var cliques = 0;
-  cliques += 1;
+  var cliques = 6;
   document.querySelector('.caixa6').innerHTML = 'Caixa' + cliques + 'Ativada';
 }
+
+//------------------------------------------------------
