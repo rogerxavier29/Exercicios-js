@@ -205,3 +205,17 @@ function clique6() {
 function body2() {
   alert('Perdeu o foco!');
 }
+
+//-------------------------------------------------------
+function escala() {
+  var numero = document.querySelector('.num').value;
+  if (numero <= 10) {
+    alert(numero + '= numero insuficiente');
+  }
+  if (numero >= 10 && numero <= 14) {
+    alert(numero + '= Bom');
+  }
+  if (numero > 14) {
+    alert(numero + '= Muito Bom');
+  }
+}
