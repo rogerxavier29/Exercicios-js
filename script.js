@@ -207,6 +207,9 @@ function body2() {
 }
 
 //-------------------------------------------------------
+
+//Exercicio12
+
 function escala() {
   var numero = document.querySelector('.num').value;
   if (numero <= 10) {
@@ -219,3 +222,12 @@ function escala() {
     alert(numero + '= Muito Bom');
   }
 }
+//--------------------------------------------------------
+
+//Exercicio 13
+
+function aia() {
+  var numero = document.querySelector('.numeris').value;
+  alert('AIA' + numero);
+}
+//--------------------------------------------------------
