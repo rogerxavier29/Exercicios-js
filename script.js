@@ -231,3 +231,13 @@ function aia() {
   alert('AIA' + numero);
 }
 //--------------------------------------------------------
+//Exercicio 14
+
+function contador() {
+  var contando = 0;
+  var numero = document.querySelector('.num14').value;
+  while (contando < numero) {
+    alert((contando += 1));
+  }
+}
+//--------------------------------------------------------
