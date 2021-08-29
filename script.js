@@ -199,3 +199,9 @@ function clique6() {
 }
 
 //------------------------------------------------------
+
+// Exercicio 11
+
+function body2() {
+  alert('Perdeu o foco!');
+}
