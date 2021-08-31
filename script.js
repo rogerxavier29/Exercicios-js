@@ -121,7 +121,7 @@ function altura() {
     if (maiorAlturaM > maiorAlturaF) {
       console.log('A maior altura é de um homem' + maiorAlturaM);
     } else {
-      console.log('A maior altura é de um homem' + maiorAlturaF);
+      console.log('A maior altura é de uma mulher' + maiorAlturaF);
     }
   }
 
@@ -129,7 +129,7 @@ function altura() {
 
   document.write('Quantidade de homem: ' + pessoasM);
 }
-
+//---------------------------------------------------------
 function nomes() {
   var name1 = document.querySelector('.nome1').value;
   var name2 = document.querySelector('.nome2').value;
@@ -241,3 +241,52 @@ function contador() {
   }
 }
 //--------------------------------------------------------
+//Exercicio 15
+
+function altura() {
+  var quantPessoas = 0;
+  var qtdAlturas = [];
+  var alturaF = 0;
+  var alturaM = 0;
+  var pessoasF = 0;
+  var pessoasM = 0;
+
+  while (quantPessoas < 15) {
+    var sexo = prompt('Digite sexo da pessoa ' + (quantPessoas + 1));
+    var altura = parseFloat(
+      prompt('Digite a ALTURA da Pessoa ' + (totalPessoas + 1)),
+    );
+
+    if (sexo == 'F' || sexo == 'f') {
+      qtdAlturas.push(altura);
+      alturaF = alturaF + altura;
+      console.log(alturaF);
+      pessoasF++;
+      console.log(pessoasF);
+    } else {
+      if (sexo == 'M' || sexo == 'm') {
+        qtdAlturas.push(altura);
+        alturaM = alturaM + altura;
+        console.log(alturaM);
+        pessoasM++;
+        console.log(pessoasM);
+      }
+    }
+
+    quantPessoas++;
+  }
+
+  function maiores() {
+    var maiorAltura = Math.max.apply(null, qtdAlturas);
+    var menorAltura = Math.min.apply(null, qtdAlturas);
+    var mediaAlturaF = parseFloat(alturaF / pessoasF);
+
+    document.write('A media da altura das mulheres é:' + mediaAlturaF);
+
+    document.write('A maior altura é: ' + maiorAltura);
+
+    document.write('A menor altura é: ' + menorAltura);
+
+    document.write('Quantidade de homem: ' + pessoasM);
+  }
+}
