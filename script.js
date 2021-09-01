@@ -328,3 +328,23 @@ document.write("Porcentagem de pessoas que responderam bom: "+ percentualBom);
 }
 
 // -------------------------------------------------------------------
+
+//Exercicio 17
+
+function pares() {
+
+
+var numeros = 0;
+var par = 0;
+var impar = 0;
+
+while( numeros < 10) {
+  numeris = parseInt(prompt("Informe um numero:")); 
+  if(numeris %2 == 0) { 
+    par += numeris; 
+  } else { 
+    impar += numeris;
+  }
+}
+document.write("A soma dos números pares é: "+par); 
+}
