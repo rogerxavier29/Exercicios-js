@@ -290,3 +290,41 @@ function altura() {
     document.write('Quantidade de homem: ' + pessoasM);
   }
 }
+
+// ----------------------------------------------------------
+
+//Exercicio 16
+
+function cinema(){
+
+var quantPessoas = 0;
+var idadeOtimo = 0;
+var contaIdadeOtimo = 0;
+var quantregular = 0;
+var contquantregular = 0; 
+var quantbom = 0;
+
+while( quantPessoas < 15) {
+  idade = parseInt(prompt("Qual sua idade:"));
+  opniao = prompt("Sua opnião ao filme: ótimo - 3, bom - 2, regular - 1:");
+  
+  if(opniao == 3) {
+    idadeOtimo += idade;
+    contaIdadeOtimo++;
+  } if(opniao == 1) {
+    quantregular += opniao;
+    contquantregular++;
+  } if(opniao == 2) {
+    quantbom += opniao;
+    contquantbom++;
+  }
+} 
+
+mediaOtimo = idadeOtimo/contaIdadeOtimo;
+percentualBom = (contquantbom*100)/15;
+document.write("Média das idades das pessoas que responderam ótimo: "+mediOtimo);
+document.write("Quantidade de pessoas que responderam regular é: "+contquantregular);
+document.write("Porcentagem de pessoas que responderam bom: "+ percentualBom);
+}
+
+// -------------------------------------------------------------------
