@@ -416,3 +416,13 @@ function off() {
     'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true';
   document.querySelector('.lampada2').src = off;
 }
+
+//----------------------------------------------------------------------------
+
+//Exercicio 21
+
+function namis() {
+  var nome = document.querySelector('.namis').value;
+  var sobre = document.querySelector('.sobrenamis').value;
+  alert(nome + ' ' + ' ' + sobre);
+}
