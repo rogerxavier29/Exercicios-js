@@ -426,3 +426,16 @@ function namis() {
   var sobre = document.querySelector('.sobrenamis').value;
   alert(nome + ' ' + ' ' + sobre);
 }
+
+//-----------------------------------------------------------------------------
+
+//Exercicio 22
+
+function cpf() {
+  var cpf = document.querySelector('.cpf').value;
+  var cpfmodificado = cpf.replace(
+    /^(\d{3})(\d{3})(\d{3})(\d{2})/,
+    '$1.$2.$3-$4',
+  );
+  document.querySelector('.cpfescrito').innerHTML = cpfmodificado;
+}
