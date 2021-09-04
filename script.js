@@ -439,3 +439,12 @@ function cpf() {
   );
   document.querySelector('.cpfescrito').innerHTML = cpfmodificado;
 }
+
+//------------------------------------------------------------------
+// Exercicio 23
+
+function semPontos() {
+  var cpf = document.querySelector('.cpf2').value;
+  cpfmodificado2 = cpf.replace('.', '').replace('.', '').replace('-', '');
+  document.querySelector('.cpfescrito2').innerHTML = cpfmodificado2;
+}
