@@ -448,3 +448,13 @@ function semPontos() {
   cpfmodificado2 = cpf.replace('.', '').replace('.', '').replace('-', '');
   document.querySelector('.cpfescrito2').innerHTML = cpfmodificado2;
 }
+//------------------------------------------------------------------
+// Exercicio 24
+
+function verde() {
+  document.querySelector('.body').style.background = 'green';
+}
+
+function vermelho() {
+  document.querySelector('.body').style.background = 'red';
+}
