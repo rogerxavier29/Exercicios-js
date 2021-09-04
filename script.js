@@ -295,36 +295,43 @@ function altura() {
 
 //Exercicio 16
 
-function cinema(){
+function cinema() {
+  var quantPessoas = 0;
+  var idadeOtimo = 0;
+  var contaIdadeOtimo = 0;
+  var quantregular = 0;
+  var contquantregular = 0;
+  var quantbom = 0;
 
-var quantPessoas = 0;
-var idadeOtimo = 0;
-var contaIdadeOtimo = 0;
-var quantregular = 0;
-var contquantregular = 0; 
-var quantbom = 0;
+  while (quantPessoas < 15) {
+    idade = parseInt(prompt('Qual sua idade:'));
+    opniao = prompt('Sua opnião ao filme: ótimo - 3, bom - 2, regular - 1:');
 
-while( quantPessoas < 15) {
-  idade = parseInt(prompt("Qual sua idade:"));
-  opniao = prompt("Sua opnião ao filme: ótimo - 3, bom - 2, regular - 1:");
-  
-  if(opniao == 3) {
-    idadeOtimo += idade;
-    contaIdadeOtimo++;
-  } if(opniao == 1) {
-    quantregular += opniao;
-    contquantregular++;
-  } if(opniao == 2) {
-    quantbom += opniao;
-    contquantbom++;
+    if (opniao == 3) {
+      idadeOtimo += idade;
+      contaIdadeOtimo++;
+    }
+    if (opniao == 1) {
+      quantregular += opniao;
+      contquantregular++;
+    }
+    if (opniao == 2) {
+      quantbom += opniao;
+      contquantbom++;
+    }
   }
-} 
 
-mediaOtimo = idadeOtimo/contaIdadeOtimo;
-percentualBom = (contquantbom*100)/15;
-document.write("Média das idades das pessoas que responderam ótimo: "+mediOtimo);
-document.write("Quantidade de pessoas que responderam regular é: "+contquantregular);
-document.write("Porcentagem de pessoas que responderam bom: "+ percentualBom);
+  mediaOtimo = idadeOtimo / contaIdadeOtimo;
+  percentualBom = (contquantbom * 100) / 15;
+  document.write(
+    'Média das idades das pessoas que responderam ótimo: ' + mediOtimo,
+  );
+  document.write(
+    'Quantidade de pessoas que responderam regular é: ' + contquantregular,
+  );
+  document.write(
+    'Porcentagem de pessoas que responderam bom: ' + percentualBom,
+  );
 }
 
 // -------------------------------------------------------------------
@@ -332,19 +339,64 @@ document.write("Porcentagem de pessoas que responderam bom: "+ percentualBom);
 //Exercicio 17
 
 function pares() {
+  var numeros = 0;
+  var par = 0;
+  var impar = 0;
 
-
-var numeros = 0;
-var par = 0;
-var impar = 0;
-
-while( numeros < 10) {
-  numeris = parseInt(prompt("Informe um numero:")); 
-  if(numeris %2 == 0) { 
-    par += numeris; 
-  } else { 
-    impar += numeris;
+  while (numeros < 10) {
+    numeris = parseInt(prompt('Informe um numero:'));
+    if (numeris % 2 == 0) {
+      par += numeris;
+    } else {
+      impar += numeris;
+    }
   }
+  document.write('A soma dos números pares é: ' + par);
 }
-document.write("A soma dos números pares é: "+par); 
+
+//Exercicios 18
+
+function hM() {
+  quantHomem = 0;
+  quantMulher = 0;
+  idadeHomem = 0;
+  pesoMulher = 0;
+
+  while (idade <= 10) {
+    idade = parseInt(prompt('Sua idade: '));
+    peso = parseInt(prompt('Seu peso: '));
+    sexo = prompt('Sexo: M ou F:');
+
+    if (sexo == 'M') {
+      quantHomem++;
+      idadeHomem += idade;
+    }
+    if (sexo == 'F') {
+      quantMulher++;
+      pesoMulher += peso;
+    }
+  }
+  mediaIdadeHomem = idadeHomem / quantHomem;
+  mediaPesoMulher = pesoMulher / quantMulher;
+  document.write('Total de homens: ' + quantHomem);
+  document.write('Total de mulheres: ' + quantMulher);
+  document.write('Média das idades dos homens: ' + mediaIdadeHomem);
+  document.write('Média dos pesos das mulheres: ' + mediaPesoMulher);
+}
+
+/// Exercicio 19
+
+function lampada() {
+  var lampada = document.querySelector('.lampada').src;
+  var on =
+    'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true';
+  var off =
+    'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true';
+
+  if (lampada === on) {
+    document.querySelector('.lampada').src = off;
+  } else {
+    document.querySelector('.lampada').src = on;
+  }
+  document.querySelector('.lampada').addEventListener('click');
 }
