@@ -400,3 +400,19 @@ function lampada() {
   }
   document.querySelector('.lampada').addEventListener('click');
 }
+
+//----------------------------------------------------------------------------------
+
+//Exercicio 20
+
+function on() {
+  var on =
+    'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true';
+  document.querySelector('.lampada2').src = on;
+}
+
+function off() {
+  var off =
+    'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true';
+  document.querySelector('.lampada2').src = off;
+}
