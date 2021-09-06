@@ -534,3 +534,15 @@ function advinha() {
     alert('Voce acertou o numero: ' + numberEscolhido);
   }
 }
+//------------------------------------------------------------------
+// Exercicio 33
+
+function dataAtual() {
+  var data = new Date();
+  var dia = data.getDate();
+  var mes = data.getMonth() + 1;
+  var ano = data.getFullYear();
+
+  var dataAtual = dia + '/' + mes + '/' + ano;
+  document.querySelector('.data2').innerHTML = dataAtual;
+}
