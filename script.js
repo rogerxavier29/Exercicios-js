@@ -503,3 +503,14 @@ function repetis2() {
     document.write(resultado);
   }
 }
+//------------------------------------------------------------------
+// Exercicio 30
+
+function caracter(caract) {
+  caract = 'assim';
+  if (caract === 'assim') {
+    alert('Tem Assim');
+  } else {
+    alert('Não tem assim');
+  }
+}
