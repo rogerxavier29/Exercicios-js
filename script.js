@@ -514,3 +514,9 @@ function caracter(caract) {
     alert('Não tem assim');
   }
 }
+//------------------------------------------------------------------
+// Exercicio 31
+
+function aleatorioNumber() {
+  alert(Math.random());
+}
