@@ -546,3 +546,16 @@ function dataAtual() {
   var dataAtual = dia + '/' + mes + '/' + ano;
   document.querySelector('.data2').innerHTML = dataAtual;
 }
+
+//------------------------------------------------------------------
+// Exercicio 34
+
+function dataAtual2() {
+  var data = new Date();
+  var dia = data.getDate();
+  var mes = data.getMonth() + 2;
+  var ano = data.getFullYear();
+
+  var dataAtual = dia + '/' + mes + '/' + ano;
+  document.querySelector('.data3').innerHTML = dataAtual;
+}
