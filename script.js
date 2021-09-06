@@ -458,3 +458,27 @@ function verde() {
 function vermelho() {
   document.querySelector('.body').style.background = 'red';
 }
+//------------------------------------------------------------------
+// Exercicio 25
+
+function multiplica(num1, num2) {
+  const mult = num1 * num2;
+  return mult;
+}
+//------------------------------------------------------------------
+// Exercicio 26
+
+function desconto(valorProduto) {
+  const desc = valorProduto * 0.05;
+  return desc;
+}
+//------------------------------------------------------------------
+// Exercicio 27
+
+function nascimento(ano) {
+  if (ano >= 2003) {
+    return console.log('Voce é maior de idade' + ano);
+  } else {
+    return console.log('Voce é menor de idade' + ano);
+  }
+}
