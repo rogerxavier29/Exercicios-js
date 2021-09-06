@@ -482,3 +482,24 @@ function nascimento(ano) {
     return console.log('Voce é menor de idade' + ano);
   }
 }
+//------------------------------------------------------------------
+// Exercicio 28
+function repetis() {
+  contando = 0;
+  var resultado = 'Repetição';
+  document.querySelector('#resultado').innerHTML = resultado;
+  for (contando = 0; contando <= 20; contando++) {
+    document.write(resultado);
+  }
+}
+
+// Exercicio 28 c while
+function repetis2() {
+  contando = 0;
+  var resultado = 'Repetição';
+  document.querySelector('#resultadoWhile').innerHTML = resultado;
+  while (contando <= 20) {
+    contando++;
+    document.write(resultado);
+  }
+}
