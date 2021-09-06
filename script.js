@@ -520,3 +520,17 @@ function caracter(caract) {
 function aleatorioNumber() {
   alert(Math.random());
 }
+//------------------------------------------------------------------
+// Exercicio 32
+
+function advinha() {
+  var numberEscolhido = 7;
+  var numberDigitado = document.querySelector('.nDigitado').value;
+  if (numberDigitado != numberEscolhido) {
+    alert('Voce errou o numero. O numero era: ' + numberEscolhido)(
+      'Voce acertou o numero: ' + numberEscolhido,
+    );
+  } else {
+    alert('Voce acertou o numero: ' + numberEscolhido);
+  }
+}
