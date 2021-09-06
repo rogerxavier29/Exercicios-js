@@ -559,3 +559,12 @@ function dataAtual2() {
   var dataAtual = dia + '/' + mes + '/' + ano;
   document.querySelector('.data3').innerHTML = dataAtual;
 }
+
+//------------------------------------------------------------------
+// Exercicio 35
+
+function array1() {
+  var deuses = ['Aegir', 'Aud', 'Balder'];
+  var deusesCompr = deuses.length;
+  document.querySelector('.deuses').innerHTML = deusesCompr;
+}
