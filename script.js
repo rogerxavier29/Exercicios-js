@@ -576,3 +576,12 @@ function array2() {
     alert(deuses[i]);
   }
 }
+
+//------------------------------------------------------------------
+// Exercicio 37
+function array3() {
+  const deuses = ['Aegir', 'Aud', 'Balder'];
+  const newDeuses = deuses.map((item) => {
+    alert(item);
+  });
+}
