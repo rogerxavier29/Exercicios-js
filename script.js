@@ -568,3 +568,11 @@ function array1() {
   var deusesCompr = deuses.length;
   document.querySelector('.deuses').innerHTML = deusesCompr;
 }
+//------------------------------------------------------------------
+// Exercicio 36
+function array2() {
+  var deuses = ['Aegir', 'Aud', 'Balder'];
+  for (i in deuses) {
+    alert(deuses[i]);
+  }
+}
