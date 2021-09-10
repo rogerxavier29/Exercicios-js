@@ -585,3 +585,53 @@ function array3() {
     alert(item);
   });
 }
+//------------------------------------------------------------------
+// Exercicio 38
+function array4() {
+  const deuses = ['Aegir', 'Aud', 'Balder'];
+  const newDeuses = deuses.push('Loki', 'Odin', 'Frey');
+  const newDeuses1 = deuses.map((item) => {
+    alert(item);
+  });
+}
+
+//------------------------------------------------------------------
+// Exercicio 39
+
+function array5() {
+  const numbers = [5, 7, 1, 8, 9];
+  alert(numbers.sort());
+}
+
+// Exercicio 40
+
+function array6() {
+  const numbers = [5, 7, 1, 8, 9];
+  const numbers1 = numbers.sort();
+  alert(numbers1.reverse());
+}
+
+// Exercicio 41
+
+function array7() {
+  const deuses = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr'];
+  document.querySelector('.array').innerHTML = deuses;
+}
+
+// Exercicio 42
+
+function array8() {
+  var prog = document.querySelector('.programas').value;
+  const list = document.querySelector('.list');
+  const valueProg = prog;
+  var li = document.createElement('li');
+  li.appendChild(document.createTextNode(valueProg));
+  list.appendChild(li);
+}
+
+// Exercicio 44
+
+// var elemento = document.querySelector('.contador');
+// var contador = 0;
+
+// setInterval(() => (elemento.innerHTML = contador++), 1000);
