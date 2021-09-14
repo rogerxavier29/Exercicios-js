@@ -629,32 +629,31 @@ function array8() {
   list.appendChild(li);
 }
 
-// Exercicio 43
-// function array9() {
-//   var elemento = document.querySelector('.input-pares').value;
-//   const pares = document.querySelector('.pares');
-//   const valuePares = elemento;
-//   var ul = document.querySelector('elemento');
-//   ul.innerHTML = '';
+//Exercicio 43
+function array9() {
+  var elemento = document.querySelector('.input').value;
+  const valuePares = elemento;
+  var ulNum = document.querySelector('.pares');
 
-//   for (i in elemento) {
-//     var li = document.createElement('li');
-//     var el = document.createTextNode(elemento[i]);
-//     li.appendChild(el);
+  const valuesPares = parseInt(elemento.value);
 
-//     if (elemento[i] % 2 == 0) {
-//       //par
-//       ul.appendChild(li).setAttribute('class', 'par');
-//     } else {
-//       ul.appendChild(li);
-//     }
-//   }
-// }
+  if (valuesPares % 2 === 0) {
+    var strongEl = document.createElement('strong');
+    strongEl.appendChild(document.createTextNode(valuesPares));
 
-// Exercicio 44
-function cont2() {
-  let time = Math.random();
-  document.querySelector('.contador5').innerHTML = time;
+    var no = document.createElement('li');
+    no.appendChild(strongEl);
+  } else {
+    var no = document.createElement('li');
+    no.appendChild(document.createTextNode(valuePares));
+  }
+  ulNum.appendChild(no);
 }
 
-const contador = setInterval(displayTime, 1000);
+// Exercicio 44
+// function cont2() {
+//   let time = Math.random();
+//   document.querySelector('.contador5').innerHTML = time;
+// }
+
+// const contador = setInterval(displayTime, 1000);
